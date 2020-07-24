@@ -1,24 +1,35 @@
 # contacts-web
+Projeto criado para consumir api rest e gerenciar lista de contatos
 
-## Project setup
+# Setup do projeto
+
+## Primeiro clocar o repositório
+- https:
+```
+https://github.com/GustavoLPS/contacts-web.git
+```
+
+- ssh:
+```
+git@github.com:GustavoLPS/contacts-web.git
+```
+
+## Entre na pasta do projeto e Instale as dependências
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Comando para compilar e iniciar o servidor em modo de desenvolvimento
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+As rotas estão apontadas para a api que está no heroku, não é necessário iniciar a api localmente
+- link da documentação da api online no heroku
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+https://contacts-api-rest.herokuapp.com/swagger-ui.html
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Para acessar a aplicação
+```
+http://localhost:8080
+```
