@@ -1,34 +1,33 @@
 <template>
     <div>
         <div class="col-md-12">
-        <a href="/create-contact" class="btn btn-primary m-2">Cadastrar</a>
-        <table class="table table-light table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Ações</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Sexo</th>
-                    <th>Telefone</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="contact in contacts" :key="contact.id">
-                    <td>
-                        <button class="btn btn-sm btn-primary mr-1" @click="editContact(contact)"><i class="fa fa-edit"></i></button>
-                        <button class="btn btn-sm btn-danger" @click="deleteContact(contact)"><i class="fas fa-trash"></i></button>
-                    </td>
-                    <td>{{ contact.nome }}</td>
-                    <td>{{ contact.email }}</td>
-                    <td>{{ contact.sexo }}</td>
-                    <td>{{ contact.telefone }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-md-12">
-        <form-contacts ref="form"/>
-    </div>
+            <table class="table table-light table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Ações</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Sexo</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="contact in contacts" :key="contact.id">
+                        <td>
+                            <button class="btn btn-sm btn-primary mr-1" @click="editContact(contact)"><i class="fa fa-edit"></i></button>
+                            <button class="btn btn-sm btn-danger" @click="deleteContact(contact)"><i class="fas fa-trash"></i></button>
+                        </td>
+                        <td>{{ contact.nome }}</td>
+                        <td>{{ contact.email }}</td>
+                        <td>{{ contact.sexo }}</td>
+                        <td>{{ contact.telefone }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-12">
+            <form-contacts ref="form"/>
+        </div>
     </div>
 </template>
 
