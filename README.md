@@ -3,7 +3,7 @@ Projeto criado para consumir api rest e gerenciar lista de contatos
 
 # Setup do projeto
 
-## Primeiro clocar o repositório
+## Primeiro clonar o repositório
 - https:
 ```
 https://github.com/GustavoLPS/contacts-web.git
